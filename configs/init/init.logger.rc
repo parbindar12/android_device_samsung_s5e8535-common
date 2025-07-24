@@ -1,0 +1,15 @@
+service logger /system/bin/logcat -b all -D -f /metadata/log.txt
+    class core
+    user root
+    group root system log
+    oneshot
+
+service klogger /system/bin/cat /proc/kmsg > /metadata/kmsg_boot.txt
+    class late_start
+    user root
+    group root system
+    oneshot
+
+on post-fs-data
+    start logger
+    start klogger

@@ -149,7 +149,8 @@ PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/init/ueventd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/ueventd.rc \
     $(COMMON_PATH)/configs/init/init.s5e8535.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.s5e8535.rc \
     $(COMMON_PATH)/configs/init/init.samsung.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.samsung.rc \
-    $(COMMON_PATH)/configs/init/init.s5e8535.usb.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.s5e8535.usb.rc
+    $(COMMON_PATH)/configs/init/init.s5e8535.usb.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.s5e8535.usb.rc \
+    $(COMMON_PATH)/configs/init/init.logger.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.logger.rc
 
 # keymint
 PRODUCT_PACKAGES += \
