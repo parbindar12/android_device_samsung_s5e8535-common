@@ -64,6 +64,9 @@ ro.frp.pst=/dev/block/persistent
 ## IncrementalFS
 ro.incremental.enable=yes
 
+## LMK
+ro.lmk.kill_heaviest_task=true
+
 ## Manufacturer
 ro.soc.manufacturer=Samsung
 ro.soc.model=s5e8535
