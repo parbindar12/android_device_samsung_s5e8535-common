@@ -156,6 +156,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.hardware_keystore.xml
 
+# DT2W
+PRODUCT_PACKAGES += \
+    $(COMMON_PATH)/dt2w/init.dt2w.rc:$(TARGET_COPY_OUT_SYSTEM)/etc/init/init.dt2w.rc
+
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.keystore.app_attest_key.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.keystore.app_attest_key.xml
 
